@@ -26,3 +26,6 @@ console.log(calc('add', "35",3));
 console.log(calc('add', 3,3));
 console.log(calc('div', 0,3));
 
+console.log(calc('div', 3,3));
+
+console.log(calc('div', 3,3));
