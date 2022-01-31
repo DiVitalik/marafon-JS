@@ -1,0 +1,81 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+
+    line-height: 40px;
+    padding: 18px;
+    color: #fff;
+    background: #D2D3DA;
+}
+
+.calc{
+    margin: 50px auto;
+    width: 300px;
+    height: 500px;
+    background: #17171C;
+}
+.calc-screen{
+    height: 125 px;
+    padding: 10px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.calc-screen p{
+    text-align: right;
+    font-size: 40px;
+    margin: 0;
+}
+.buttons{
+    display: grid;
+    grid-template-areas:
+    "c c del devision"
+    "seven eight nine multiply"
+    "four five six min"
+    "one two  three add"
+    "zero zero zero equels";
+    grid-gap: 7px;
+    justify-items: center;
+}
+
+.btn{
+    width: 69px;
+    height: 72px;
+    background: #2e2f38;
+    border-radius: 24px;
+    text-align: center;
+    line-height: 72px;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: normal;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.btn.zero {
+    grid-area: zero;
+    width: 100%;
+    border-radius: 34px;
+}
+
+.btn.c {
+    grid-area: c;
+    width: 100%;
+    border-radius: 34px;
+}
+.btn:hover{
+    filter: brightness(120%);
+}
+
+.btn:active{
+    filter: brightness(90%);
+}
+
+.btn.bg-gray{
+    background: #2E2F38;
+}
+
+.btn.bg-blue{
+    background: #4B5EFC;
+}
