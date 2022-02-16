@@ -1,41 +1,30 @@
+
 body {
+    margin: 0;
     font-family: 'Work Sans', sans-serif;
     font-weight: normal;
-
+    font-size: 32px;
     line-height: 40px;
-    padding: 18px;
     color: #fff;
-    background: #D2D3DA;
+    overflow-x:  hidden;
+    overflow-y:  hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    height: 100vh;
 }
 
 .calc{
-    margin: 50px auto;
-    width: 300px;
-    height: 500px;
+    width: 364px;
+    height: 582px;
     background: #17171C;
-}
-.calc-screen{
-    height: 125 px;
-    padding: 10px;
-    display: grid;
-    justify-items: end;
-    align-items: end;
-}
-.calc-screen p{
-    text-align: right;
-    font-size: 40px;
-    margin: 0;
-}
-.buttons{
-    display: grid;
-    grid-template-areas:
-    "c c del devision"
-    "seven eight nine multiply"
-    "four five six min"
-    "one two  three add"
-    "zero zero zero equels";
-    grid-gap: 7px;
-    justify-items: center;
+    padding: 21px 20px 10px;
 }
 
 .btn{
@@ -51,8 +40,17 @@ body {
     cursor: pointer;
     user-select: none;
 }
-
-
+.buttons{
+    display: grid;
+    grid-template-areas:
+    "c c del devision"
+    "seven eight nine multiply"
+    "four five six min"
+    "one two  three add"
+    "zero zero zero equels";
+    grid-gap: 20px;
+    justify-items: center;
+}
 .btn.zero {
     grid-area: zero;
     width: 100%;
@@ -64,6 +62,7 @@ body {
     width: 100%;
     border-radius: 34px;
 }
+
 .btn:hover{
     filter: brightness(120%);
 }
@@ -78,4 +77,19 @@ body {
 
 .btn.bg-blue{
     background: #4B5EFC;
+}
+
+.calc-screen{
+    padding: 16px;
+    display: grid;
+    justify-items: end;
+    align-items: end;
+}
+.calc-screen p{
+    height: 96px;
+    text-align: right;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 96px;
+    margin: 0;
 }
